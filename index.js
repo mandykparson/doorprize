@@ -1,10 +1,23 @@
-const button = index.html.getElementById("btn")
+const prizes = [
+    "a puppy", 
+    "a company mug", 
+    "a discounted christmas sweater from Walmart", 
+    "the CD: Now That's What I Call Music 14", 
+    "Kazaam on DVD/BlueRay", 
+    "a computer virus",
+    "the iMac rainbow wheel",
 
-function itWorks() {
-    alert('I work!')
+]
+
+const button = document.getElementById("btn")
+let newPrize = document.getElementById("empty")
+
+function generatePrize() {
+    const randomlyGenNum = Math.floor((Math.random() * 7) + 0);
+    newPrize.innerText = `Congratulations! You won ${prizes[randomlyGenNum]}!`
 }
 
-button.addEventListener('click', itWorks)
+button.addEventListener('click', generatePrize)
 //const input = document.getElementById('input');
 
 //function randomNumber() {
@@ -17,20 +30,7 @@ button.addEventListener('click', itWorks)
 
  // the number generated when a use clicks on the Take a Number button
  const eneteredNumber = "" // the number inputed (may not be takeANumber) by user
- const prizes = [
-     "a puppy", 
-     "a company mug", 
-     "a discounted christmas sweater from Walmart", 
-     "the CD: Now That's What I Call Music 14", 
-     "Kazaam on DVD/BlueRay", 
-     "a computer virus",
-     "the iMac rainbow wheel",
  
- ]
- 
- function selectPrize(){
-     console.log(`Congratulations! You won ${prizes[takeaNumber]}!`)
- }
  
  
  function randomNumber() {
