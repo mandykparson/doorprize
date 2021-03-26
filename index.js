@@ -1,3 +1,10 @@
+const button = index.html.getElementById("btn")
+
+function itWorks() {
+    alert('I work!')
+}
+
+button.addEventListener('click', itWorks)
 //const input = document.getElementById('input');
 
 //function randomNumber() {
