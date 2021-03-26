@@ -6,14 +6,13 @@ const prizes = [
     "Kazaam on DVD/BlueRay", 
     "a computer virus",
     "the iMac rainbow wheel",
-
 ]
 
 const button = document.getElementById("btn")
 let newPrize = document.getElementById("empty")
 
 function generatePrize() {
-    const randomlyGenNum = Math.floor((Math.random() * 7) + 0);
+    const randomlyGenNum = Math.floor((Math.random() * 8) + 0);
     newPrize.innerText = `Congratulations! You won ${prizes[randomlyGenNum]}!`
 }
 
