@@ -8,32 +8,29 @@ const prizes = [
     "the iMac rainbow wheel",
 ]
 
+const newPrizes = [
+    {
+        name: "a puppy",
+        imgUrl: https://www.akcpetinsurance.com/res/akc/blog/2018/new-puppy-essentials/header_puppy_checklist.jpg
+    }
+    
+]
+
 const button = document.getElementById("btn")
 let newPrize = document.getElementById("empty")
 
 function generatePrize() {
     const randomlyGenNum = Math.floor((Math.random() * 8) + 0);
-    newPrize.innerText = `Congratulations! You won ${prizes[randomlyGenNum]}!`
-}
+    const prize = newPrizes[randomlyGenNum].name
+    const prizePic = newPrizes[randomlyGenNum].imgUrl
+    newPrize.innerText = `Congratulations! You won ${prize}! ${prizePic}`
+ }
 
 button.addEventListener('click', generatePrize)
-//const input = document.getElementById('input');
-
-//function randomNumber() {
-    //let randomlyGenNum = Math.floor((Math.random() * 5) + 1);
-    //console.log(randomlyGenNum)
-    //alert(`Your number is ${randomlyGenNum}`)
-//}
-
-//input.addEventListener('click', randomNumber); 
-
- // the number generated when a use clicks on the Take a Number button
- const eneteredNumber = "" // the number inputed (may not be takeANumber) by user
  
  
- 
- function randomNumber() {
-     let randomlyGenNum = Math.floor((Math.random() * 5) + 1);
-     console.log(randomlyGenNum)
-     alert('I was clicked!')
- }
+function randomNumber() {
+    let randomlyGenNum = Math.floor((Math.random() * 5) + 1);
+    console.log(randomlyGenNum)
+    alert('I was clicked!')
+}
