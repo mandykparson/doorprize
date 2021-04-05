@@ -8,14 +8,14 @@ const prizes = [
     "the iMac rainbow wheel",
 ]
 
-const prizePics = [
-    'puppy.jpeg', 
-    'company_mug.jpg',
-    'sweater.jpeg',
-    'cd.jpg',
-    'kazaam.jpg',
-    'virus.webp',
-    'rainbow_wheel.webp'
+const prizePics = [ // L X w
+    'puppy.jpeg', // 400 X 200
+    'company_mug.jpg', // 200 X 200
+    'sweater.jpeg', // 200 X 200
+    'cd.jpg', // 200 X 200
+    'kazaam.jpg', // 400 X 200
+    'virus.webp', // 200 X 300
+    'rainbow_wheel.webp' // 400 X 200
 ]
 
 const button = document.getElementById("btn")

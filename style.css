@@ -3,6 +3,12 @@
     color: white;
 }
 
-.prizePic {
-    display: none
+html {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h2 {
+    font-style: italic;
 }
