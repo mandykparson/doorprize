@@ -8,29 +8,28 @@ const prizes = [
     "the iMac rainbow wheel",
 ]
 
-const newPrizes = [
-    {
-        name: "a puppy",
-        imgUrl: https://www.akcpetinsurance.com/res/akc/blog/2018/new-puppy-essentials/header_puppy_checklist.jpg
-    }
-    
+const prizePics = [
+    'puppy.jpeg', 
+    'company_mug.jpg',
+    'sweater.jpeg',
+    'cd.jpg',
+    'kazaam.jpg',
+    'virus.webp',
+    'rainbow_wheel.webp'
 ]
 
 const button = document.getElementById("btn")
 let newPrize = document.getElementById("empty")
+let newPrizePic = document.getElementById("emptyPic")
 
 function generatePrize() {
-    const randomlyGenNum = Math.floor((Math.random() * 8) + 0);
-    const prize = newPrizes[randomlyGenNum].name
-    const prizePic = newPrizes[randomlyGenNum].imgUrl
-    newPrize.innerText = `Congratulations! You won ${prize}! ${prizePic}`
+    const randomlyGenNum = Math.floor((Math.random() * 7) + 0);
+    const prize = prizes[randomlyGenNum]
+    const picture = prizePics[randomlyGenNum]
+    newPrize.innerText = `Congratulations! You won ${prize}!`
+    newPrizePic.src = `images/${prizePics[randomlyGenNum]}`
+    console.log(randomlyGenNum)
+    
  }
 
 button.addEventListener('click', generatePrize)
- 
- 
-function randomNumber() {
-    let randomlyGenNum = Math.floor((Math.random() * 5) + 1);
-    console.log(randomlyGenNum)
-    alert('I was clicked!')
-}
